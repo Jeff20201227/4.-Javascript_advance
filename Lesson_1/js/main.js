@@ -26,7 +26,7 @@ const products = [{
 const renderProduct = (title, price, img = 'https://dummyimage.com/350x150/00ffae.jpg&text=%D0%97%D0%B0%D0%B3%D0%BB%D1%83%D1%88%D0%BA%D0%B0') => {
     return `<div class="product-item">
                 <h3>${title}</h3>
-                <img src="${img}" alt="">
+                <img src="${img}" alt="фото">
                 <p>${price}</p>
                 <button class="by-btn">Добавить в корзину</button>
               </div>`;
@@ -40,5 +40,3 @@ const renderProducts = list => {
 
 
 renderProducts(products);
-
-//document.write(products.join(""));
