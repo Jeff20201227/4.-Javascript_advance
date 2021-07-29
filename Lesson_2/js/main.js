@@ -44,7 +44,8 @@ class ProductsList {
     getSum() {
     let sum = 0;
        for(let product of this.goods){
-            sum += product.price;
+           sum += product.price;
+           console.log(sum);
        }
 
     }    
