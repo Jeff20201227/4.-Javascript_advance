@@ -35,14 +35,14 @@
                 </form>
                 <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
                 <div class="cart-block" v-show="showCart">
-                    <p v-if="!cartItems.length">Cart is empty</p>
+                    <p v-if="!cartItems.length">Корзина пуста</p>
                     <div class="cart-item" v-for="item of cartItems" :key="item.id_product">
                         <div class="product-bio">
                             <img :src="imgCart" alt="Some img">
                             <div class="product-desc">
                                 <div class="product-title">{{ item.product_name }}</div>
-                                <div class="product-quantity">Quantity: {{ item.quantity }}</div>
-                                <div class="product-single-price">$ {{ item.price }} each</div>
+                                <div class="product-quantity">Количество: {{ item.quantity }}</div>
+                                <div class="product-single-price">$ {{ item.price }} за 1 единицу.</div>
                             </div>
                         </div>
                         <div class="right-block">
