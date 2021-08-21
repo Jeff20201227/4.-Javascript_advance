@@ -22,7 +22,8 @@
   "scripts": {
     "test": "jasmine",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
