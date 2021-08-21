@@ -1,7 +1,13 @@
 module.exports = {
     entry: './public/js/comp.js',
     output: {
-        path: 'C:\/Users\/iamal\/Desktop\/Coding\/JavaScript II\/java-script-advanced\/public\/js',
+        path: 'D:\Geekbrains_homework\4.Javascript_advance\Lesson_8\primer\public\js',
         filename: './components.js'
-    }
+    },
+    module: {
+    rules: [
+      { test: /\.svg$/, use: 'svg-inline-loader' },
+      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] }
+    ]
+  }
 }

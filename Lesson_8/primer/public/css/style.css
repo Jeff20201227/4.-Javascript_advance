@@ -342,7 +342,7 @@ body {
 }
 
 .promo__boxes--small {
-  min-height: 260px;
+  min-height: 544px;
   width: 31.58%;
   margin-bottom: 30px;
 }
@@ -399,7 +399,7 @@ body {
 
 @media (max-width: 1024px) {
   .promo__boxes--small {
-    min-height: 168px;
+    min-width: 360px;
   }
   .promo__boxes--big {
     min-height: 116px;
