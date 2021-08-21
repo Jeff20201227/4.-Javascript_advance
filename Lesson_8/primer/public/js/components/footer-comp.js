@@ -5,16 +5,16 @@ Vue.component('FooterComp', {
                 <div class="footer__top__container container">
                     <div class="footer__top__container__quote">
                         <img src="img/quote-portrait.png" alt="quote-author">
-                        <p>"Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum"</span></p>
+                        <p>"Я постоянно покупаю книги именно в этом магазине, <span>и у меня уже действительно БОЛЬШИЕ скидки на товары!"</span></p>
                     </div>
                     <div class="footer__top__container__subscribe">
                         <div class="footer__top__container__subscribe__headline">
-                            <h3>Subscribe<br><span>for our newsletter and promotion</span></h3>
+                            <h3>Подпишитесь на новости<br><span>чтобы быть в курсе всех новинок и скидок!</span></h3>
                         </div>
                         <div class="footer__top__container__subscribe__form">
-                            <form action="">
-                                <input class="footer__top__container__subscribe__form__email" type="email" placeholder="Enter Your Email">
-                                <input class="footer__top__container__subscribe__form__submit" type="submit" value="Subscribe">
+                            <form action="#">
+                                <input class="footer__top__container__subscribe__form__email" type="email" placeholder="Введите свой Email">
+                                <input class="footer__top__container__subscribe__form__submit" type="submit" value="Подписаться">
                             </form>
                         </div>
                     </div>

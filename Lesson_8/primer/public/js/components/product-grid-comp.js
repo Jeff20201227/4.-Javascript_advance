@@ -41,6 +41,7 @@ Vue.component('ProductSingleComp', {
     props: ['product'],
     template: `
         <article class="product-single">
+        <div>
             <div class="product-single__img product-single__img--darken">
                 <img :src="product.imgProduct" alt="product-image">
                 <button class="add-to-cart" @click="$root.$refs.cart.addProduct(product)">
@@ -60,7 +61,9 @@ Vue.component('ProductSingleComp', {
             </div>
             <div class="product-single__price">
                 <h3>{{ product.price }} рублей</h3>
+                <button class="add-to-cart_2" @click="$root.$refs.cart.addProduct(product)">В корзину</button>
             </div>
+        </div>
         </article>
     `
 });

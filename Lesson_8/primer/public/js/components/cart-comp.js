@@ -44,7 +44,6 @@ Vue.component('CartComp', {
                     })
             }
         },
-    },
     mounted() {
         this.$parent.getJson(`/api/cart`)
             .then(data => {
@@ -52,12 +51,13 @@ Vue.component('CartComp', {
                     this.cartItems.push(el)
                 }
             });
+        },
     },
     template: `
         <section class="cart" v-show="$root.$refs.showCart.showCart">
             <div class="cart__container">
-                <h3>Cart</h3>
-                <p class="cart__container--empty" v-if="!cartItems.length">Empty</p>
+                <h3>Корзина</h3>
+                <p class="cart__container--empty" v-if="!cartItems.length">Пуста</p>
                 <cart-single-comp v-for="item of cartItems" 
                 :key="item.id_product"
                 :cart-item="item"
@@ -80,14 +80,14 @@ Vue.component('CartSingleComp', {
     template: `
         <article class="cart__product">
             <div class="cart__product__img">
-                <img :src="cartItem.imgProduct" alt="Cart Product Image">
+                <img :src="cartItem.imgProduct" alt="Обложка книги">
             </div>
             <div class="cart__product__info">
                 <h3>{{ cartItem.product_name }}</h3>
-                <p>Quantity: {{ cartItem.quantity }}</p>
-                <p>Price per Item: $ {{ cartItem.price }}</p>
-                <p class="cart__product__info--price">Total Price: $ {{ cartItem.quantity * cartItem.price }}</p>
-                <button @click="$emit('remove', cartItem)">Remove</button>
+                <p>Количество: {{ cartItem.quantity }}</p>
+                <p>Цена за 1 книгу: {{ cartItem.price }} рублей</p>
+                <p class="cart__product__info--price">Общая сумма: {{ cartItem.quantity * cartItem.price }} рублей</p>
+                <button @click="$emit('remove', cartItem)">Убрать из корзины</button>
             </div>
         </article>
 `

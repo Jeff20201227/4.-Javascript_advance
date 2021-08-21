@@ -1,7 +1,7 @@
 module.exports = {
     entry: './public/js/comp.js',
     output: {
-        path: 'D:\Geekbrains_homework\4.Javascript_advance\Lesson_8\primer\public\js',
+        path: 'D:\/Geekbrains_homework\/4_javascript_advance\/Lesson_8\/primer\/public\/js',
         filename: './components.js'
     },
     module: {

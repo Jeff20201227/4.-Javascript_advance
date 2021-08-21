@@ -9,8 +9,8 @@ Vue.component('BenefitsComp', {
                         </svg>
                     </div>
                     <div class="benefit-card__description">
-                        <h3>Free Delivery</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                        <h3>Бесплатная доставка</h3>
+                        <p>При заказе от 5ооо рублей, бесплатная доставка в пределах МКАД.</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -20,8 +20,8 @@ Vue.component('BenefitsComp', {
                         </svg>
                     </div>
                     <div class="benefit-card__description">
-                        <h3>Sales & Discounts</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                        <h3>Распродажи и скидки</h3>
+                        <p>В нашем магазине часто бывают распродажи, постоянным покупателям - скидки!</p>
                     </div>
                 </div>
                 <div class="benefit-card">
@@ -31,8 +31,8 @@ Vue.component('BenefitsComp', {
                         </svg>
                     </div>
                     <div class="benefit-card__description">
-                        <h3>Quality Assurance</h3>
-                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                        <h3>Высокое качество товаров</h3>
+                        <p>В нашем магазине всё только высшего качества!</p>
                     </div>
                 </div>
             </div>
